@@ -1,0 +1,77 @@
+
+SORU1. test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+CEVAP1. create table employee (id serial primary key, name VARCHAR(50), birthday DATE, email VARCHAR(100));
+
+SORU2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+CEVAP2. 
+
+        insert into employee (name, birthday, email) values ('Wally', '2021-01-18', null);
+insert into employee (name, birthday, email) values ('Brandea', '2020-08-23', 'bjovovic1@slate.com');
+insert into employee (name, birthday, email) values ('Pat', null, null);
+insert into employee (name, birthday, email) values ('Rozella', null, 'rdemcik3@about.com');
+insert into employee (name, birthday, email) values ('Pet', '2020-11-12', 'pmaciaszczyk4@google.cn');
+insert into employee (name, birthday, email) values ('Ambrosi', '2020-09-17', 'alayburn5@marriott.com');
+insert into employee (name, birthday, email) values ('Matthaeus', '2020-09-01', 'mdighton6@gov.uk');
+insert into employee (name, birthday, email) values ('Mallorie', '2021-06-29', null);
+insert into employee (name, birthday, email) values ('Mirelle', null, null);
+insert into employee (name, birthday, email) values ('Elianore', '2021-03-29', 'ekibbye9@surveymonkey.com');
+insert into employee (name, birthday, email) values ('Stirling', null, 'sgoldringa@mozilla.org');
+insert into employee (name, birthday, email) values ('Gertruda', '2020-08-24', 'gmolanb@unicef.org');
+insert into employee (name, birthday, email) values ('Wendie', '2021-06-17', 'wdegregolic@unc.edu');
+insert into employee (name, birthday, email) values ('Teresa', '2020-10-17', null);
+insert into employee (name, birthday, email) values ('Aloisia', '2021-05-15', 'ajacobowicze@vimeo.com');
+insert into employee (name, birthday, email) values ('Shelbi', '2021-07-01', null);
+insert into employee (name, birthday, email) values ('Kendra', '2021-04-15', 'kkeyseg@mozilla.org');
+insert into employee (name, birthday, email) values ('Sauveur', '2021-04-19', null);
+insert into employee (name, birthday, email) values ('Berton', '2020-08-21', null);
+insert into employee (name, birthday, email) values ('Kissee', '2020-09-21', 'klilleycropj@gmpg.org');
+insert into employee (name, birthday, email) values ('Burtie', '2020-10-19', null);
+insert into employee (name, birthday, email) values ('Howard', '2021-05-30', 'htrasslerl@dedecms.com');
+insert into employee (name, birthday, email) values ('Wolf', null, null);
+insert into employee (name, birthday, email) values ('Shandy', '2021-02-08', 'smcgrottyn@networkadvertising.org');
+insert into employee (name, birthday, email) values ('Rochette', '2021-06-23', 'rbenthallo@addthis.com');
+insert into employee (name, birthday, email) values ('Aleksandr', '2020-10-18', 'auttersonp@booking.com');
+insert into employee (name, birthday, email) values ('Min', null, 'mhurtadoq@lycos.com');
+insert into employee (name, birthday, email) values ('Dix', '2021-04-07', 'degdellr@state.tx.us');
+insert into employee (name, birthday, email) values ('Maxwell', '2021-05-22', 'mshenfishs@blogtalkradio.com');
+insert into employee (name, birthday, email) values ('Cathlene', '2021-05-12', 'cloddyt@nps.gov');
+insert into employee (name, birthday, email) values ('Betty', '2021-06-07', 'bwedlakeu@huffingtonpost.com');
+insert into employee (name, birthday, email) values ('Ced', '2021-06-27', null);
+insert into employee (name, birthday, email) values ('Shanan', null, 'skitterw@sohu.com');
+insert into employee (name, birthday, email) values ('Louisa', '2020-08-16', 'lablettx@t-online.de');
+insert into employee (name, birthday, email) values ('Roana', '2020-12-11', 'rbillyealdy@usgs.gov');
+insert into employee (name, birthday, email) values ('Jeri', '2021-01-22', 'jscudz@etsy.com');
+insert into employee (name, birthday, email) values ('Calli', '2021-03-12', null);
+insert into employee (name, birthday, email) values ('Kyrstin', '2021-02-21', 'kattaway11@w3.org');
+insert into employee (name, birthday, email) values ('Sharyl', '2020-09-16', 'sgormley12@phoca.cz');
+insert into employee (name, birthday, email) values ('Angelo', '2021-02-15', 'abyers13@is.gd');
+insert into employee (name, birthday, email) values ('Berny', '2021-04-02', null);
+insert into employee (name, birthday, email) values ('Alethea', '2021-05-09', 'avampouille15@hatena.ne.jp');
+insert into employee (name, birthday, email) values ('Herrick', '2021-05-07', 'hsympson16@ifeng.com');
+insert into employee (name, birthday, email) values ('Klement', '2021-01-03', 'kfrears17@goo.ne.jp');
+insert into employee (name, birthday, email) values ('Peirce', '2021-06-26', 'pbafford18@oaic.gov.au');
+insert into employee (name, birthday, email) values ('Valerye', null, null);
+insert into employee (name, birthday, email) values ('Alyce', '2020-12-20', 'asuarez1a@cpanel.net');
+insert into employee (name, birthday, email) values ('Beitris', null, 'bgopsell1b@sciencedirect.com');
+insert into employee (name, birthday, email) values ('Jonathon', '2021-02-28', 'jeickhoff1c@123-reg.co.uk');
+insert into employee (name, birthday, email) values ('Major', '2020-11-27', 'mdavydychev1d@freewebs.com');
+
+SORU3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+CEVAP3.
+  UPDATE employee set name = 'mike',birthday = '2020-01-02',email='mike@mail.com' where id = 3;
+  UPDATE employee set id = 55 ,birthday = '2020-01-02',email='mike@mail.com' where name = 'mike';
+  UPDATE employee set id = 56 ,name = 'don',email='don@mail.com' where birthday = '2020-01-02';
+  UPDATE employee set id = 60 ,name = 'don',birthday='2015-01-01' where email = 'don@mail.com';
+  UPDATE employee set email='new@mail.com' ,name = 'don',birthday='2015-01-01' where id = 60;
+
+
+
+SORU4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+CEVAP4.
+    DELETE from employee where name = 'mike';
+    DELETE from employee where id = '60';
+    DELETE from employee where birthday = '2020-11-27';
+    DELETE from employee where id = '48';
+    DELETE from employee where email = 'avampouille15@hatena.ne.jp';
+
+
