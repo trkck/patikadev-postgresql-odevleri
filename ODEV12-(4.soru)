@@ -1,0 +1,8 @@
+ceveap:
+
+
+select sum(amount) , customer.first_name, customer.last_name from payment
+join customer on customer.customer_id = payment.customer_id
+group by payment.customer_id,customer.first_name,customer.last_name
+order by sum(amount) desc
+limit 1;
